@@ -28,10 +28,6 @@ export default async ()=>{
     if(userWallet.error || !userWallet.userWallet?.publicKey){
         return <div>No Solana Wallet Found.</div>
     }
-
-    
-
-
     return <div>
         <ProfileCard publicKey={userWallet.userWallet?.publicKey}/>
     </div>
